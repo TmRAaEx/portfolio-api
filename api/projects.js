@@ -1,6 +1,6 @@
 import client from "../lib/db";
 
-export default async function handler(req, res) {
+export default async function handler(_, res) {
   try {
     const db_client = await client.connect();
     const db = db_client.db("portfolio");
